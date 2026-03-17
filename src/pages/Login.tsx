@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import logoPdv from "@/assets/logo-pdv.png";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -21,14 +22,18 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="window-frame" style={{ width: 380 }}>
+    <div className="min-h-screen flex items-center justify-center" style={{ background: "linear-gradient(135deg, hsl(205, 85%, 60%), hsl(215, 90%, 50%))" }}>
+      <div className="window-frame" style={{ width: 400 }}>
         <div className="window-titlebar flex items-center gap-2">
           <span>🖥️</span>
-          {showForgotPassword ? "Recuperar Senha" : "Sistema PDV - Login"}
+          {showForgotPassword ? "Recuperar Senha" : "Sistema PDV Pro - Login"}
         </div>
 
         <div className="p-4">
+          <div className="flex justify-center mb-4">
+            <img src={logoPdv} alt="PDV Pro Logo" className="w-32 h-32 object-contain" />
+          </div>
+
           {!showForgotPassword ? (
             <form onSubmit={handleLogin}>
               <fieldset className="fieldset-retro">
@@ -119,7 +124,7 @@ const Login = () => {
         </div>
 
         <div className="border-t border-border px-4 py-2 text-[11px] text-muted-foreground text-center">
-          Sistema PDV/ERP v1.0 — Todos os direitos reservados
+          Sistema PDV Pro v1.0 — Todos os direitos reservados
         </div>
       </div>
     </div>
