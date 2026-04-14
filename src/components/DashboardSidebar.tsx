@@ -38,6 +38,7 @@ const modules: Module[] = [
     name: "Vendas",
     items: [
       { label: "PDV - Ponto de Venda", path: "/dashboard/pdv", icon: <ShoppingCart size={14} /> },
+      { label: "Pedidos de Venda", path: "/dashboard/pedidos", icon: <ClipboardList size={14} /> },
       { label: "Consultar Vendas", path: "/dashboard/vendas", icon: <ClipboardList size={14} /> },
     ],
   },
