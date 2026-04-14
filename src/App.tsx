@@ -15,6 +15,7 @@ import ContasReceber from "./pages/ContasReceber";
 import PDV from "./pages/PDV";
 import Vendas from "./pages/Vendas";
 import Compras from "./pages/Compras";
+import Pedidos from "./pages/Pedidos";
 import Estoque from "./pages/Estoque";
 import Relatorios from "./pages/Relatorios";
 import NotFound from "./pages/NotFound";
@@ -40,6 +41,7 @@ const App = () => (
             <Route path="pdv" element={<PDV />} />
             <Route path="vendas" element={<Vendas />} />
             <Route path="compras" element={<Compras />} />
+            <Route path="pedidos" element={<Pedidos />} />
             <Route path="estoque" element={<Estoque />} />
             <Route path="relatorios" element={<Relatorios />} />
           </Route>
