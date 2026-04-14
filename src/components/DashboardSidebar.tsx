@@ -24,11 +24,6 @@ const modules: Module[] = [
       { label: "Produtos", path: "/dashboard/produtos", icon: <Package size={14} /> },
       { label: "Clientes", path: "/dashboard/clientes", icon: <Users size={14} /> },
       { label: "Fornecedores", path: "/dashboard/fornecedores", icon: <Truck size={14} /> },
-    ],
-  },
-  {
-    name: "Controle de Acesso",
-    items: [
       { label: "Usuários", path: "/dashboard/usuarios", icon: <UserCog size={14} /> },
     ],
   },
